@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rock Paper Scissors</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<audio id="background-music" src="bg_msc.mp3" loop style="display: none;">
+    Your browser does not support the <code>audio</code> element.
+</audio>
+
+<h1>Rock Paper Scissors</h1>
+<div id="choices">
+    <button onclick="play('rock'); startBackgroundMusic()">Rock</button>
+    <button onclick="play('paper'); startBackgroundMusic()">Paper</button>
+    <button onclick="play('scissors'); startBackgroundMusic()">Scissors</button>
+</div>
+<div id="result"></div>
+<div id="score-container">
+    <div>
+        <span>Player: </span><span id="player-score">0</span>
+    </div>
+    <div>
+        <span>Computer: </span><span id="computer-score">0</span>
+    </div>
+    <button id="reset-button" onclick="resetScore()">Reset Scores</button>
+</div>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
